@@ -11,6 +11,10 @@ public class Deal {
     // private int number;
     // private static int countOfDeals = 0;
 
+    public LocalDate getDate() {
+        return date;
+    }
+
     public static List<Deal> getDeals() {
         return deals;
     }
