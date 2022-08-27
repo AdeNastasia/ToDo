@@ -9,6 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="${pageContext.request.contextPath}/css/styleForIndex.css" rel="stylesheet" type="text/css">
     <title>Добавим дело</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         <input type="text" name="name">
     </label>
     <p></p>
-    <button type="submit">Добавить еще дело</button>
+    <button type="submit">Добавить</button>
 
 </form>
 

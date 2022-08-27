@@ -1,0 +1,52 @@
+body {
+    color: darkblue;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: steelblue;
+}
+
+input {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #ffffff;
+    outline: none;
+    height: 32px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: steelblue;
+}
+
+input:focus {
+    color: #000000;
+}
+
+button {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: lightblue;
+    color: darkblue;
+}
+
+button:focus {
+    background: skyblue;
+}

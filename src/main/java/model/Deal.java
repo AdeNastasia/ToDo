@@ -7,6 +7,7 @@ import java.util.List;
 public class Deal {
     private LocalDate date;
     private String name;
+    // private boolean isActive = true;
     // private int number;
     // private static int countOfDeals = 0;
 

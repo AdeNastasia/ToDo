@@ -9,6 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="${pageContext.request.contextPath}/css/styleForIndex.css" rel="stylesheet" type="text/css">
     <title>Просмотр дел</title>
 </head>
 <body>
@@ -18,10 +19,9 @@
     <%
 
         List<Deal> deals = Deal.getDeals();
-        if (deals.size() == 0) {
+        if (deals.size() > 1 ) {
             out.println("<p>Ух ты! Никаких дел на сегодня :)</p>");
         } else {
-
 
             for (int i = 0; i < deals.size(); i++) { // сейчас вывожу через fori, чтобы отображать порядковый номер, но, возможно, перенесу это в логику Deal
                 out.println("<p>" + (i + 1) + ". " + deals.get(i) + "</p>"); // теги для того, чтобы значение списка выводилось с новой строки
