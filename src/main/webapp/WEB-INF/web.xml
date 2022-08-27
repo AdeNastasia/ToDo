@@ -24,5 +24,15 @@
     <url-pattern>/show</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>ShowAllDeals</servlet-name>
+    <jsp-file>/jsp/ShowAllDeals.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ShowAllDeals</servlet-name>
+    <url-pattern>/showAllDeals</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>

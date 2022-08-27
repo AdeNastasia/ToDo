@@ -24,11 +24,13 @@ public class Deal {
     public Deal(LocalDate date, String name) {
         this.date = date;
         this.name = name;
+
+        new DateWitDeals(this); // на этапе, когда пользователь добавляет дело, я создаю список дел по дате (ли добавляю в существующий список, в зависимости от даты)
     }
 
     @Override
     public String toString() {
-        return name.substring(0, 1).toUpperCase() + name.substring(1); // чтобы напечать слово с заглавной буквы
+        return name.substring(0, 1).toUpperCase() + name.substring(1); // чтобы напечатать слово с заглавной буквы
 
     }
 

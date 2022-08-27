@@ -13,26 +13,12 @@
     <title>Просмотр дел</title>
 </head>
 <body>
-<p>
-    <%@ page import="model.Deal" %>
-    <%@ page import="java.util.List" %>
-    <%
-
-        List<Deal> deals = Deal.getDeals();
-        if (deals.size() > 1 ) {
-            out.println("<p>Ух ты! Никаких дел на сегодня :)</p>");
-        } else {
-
-            for (int i = 0; i < deals.size(); i++) { // сейчас вывожу через fori, чтобы отображать порядковый номер, но, возможно, перенесу это в логику Deal
-                out.println("<p>" + (i + 1) + ". " + deals.get(i) + "</p>"); // теги для того, чтобы значение списка выводилось с новой строки
-            }
-        }
-
-    %>
-
-    <button onclick="location.href='/'">На главную</button>
-
-</p>
+ <div>
+    <button onclick="location.href='/showAllDeals'">Показать все дела</button>
+     <button onclick="location.href='/'">Дела по дням</button> <!-- нужно подумать, как тут лучше организовать вывод-->
+     <button onclick="location.href='/'">На главную</button>
+ </div>
+</body>
 
 </body>
 </html>
