@@ -24,8 +24,6 @@ public class Deal {
     public Deal(LocalDate date, String name) {
         this.date = date;
         this.name = name;
-
-        new DateWitDeals(this); // на этапе, когда пользователь добавляет дело, я создаю список дел по дате (ли добавляю в существующий список, в зависимости от даты)
     }
 
     @Override
@@ -37,6 +35,8 @@ public class Deal {
     public static void addNewDeal(Deal deal) {
         deals.add(deal);
     }
+
+
 
     public static void printDeals() {
         for (Deal deal : deals) {
